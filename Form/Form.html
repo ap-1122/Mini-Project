@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="./form.css">
 </head>
 <body>
+    <div class="box">
+    <form action="">
+     <p id="errorname"></p>
+    Enter your name:<input type="text" name="" id="name"> 
+     <p id="errorphone"></p>
+    Enter your PhoneNo: +91<input type="text" name="" id="phoneno">
+     <p id="erroremail"></p>
+    Enter your Email:<input type="text" name="" id="email">
+     <p id="erroraddress"></p>
+    Enter your Address:<input type="text" name="" id="address">
+     <p id="errorpincode"></p>
+    Enter your Pincode:<input type="text" name="" id="pincode">
+     <p id="errorstate"></p>
+    Enter your State:<input type="text" name="" id="state">
+      <p id="errorpass"></p>
+    Enter your password:<input type="text" name="" id="pass">
+      <p id="errorcfpw"></p>
+    confirm password:<input type="text" name="" id="cfpw">
+    <p id="notmatch"></p>
+
+    
+    <div class="center-div">
+     <input type="submit" value="Sign Up" onclick="return formvalid()" id="signup">
+   </div>
+
+    </form>
+</div>
     <script src="form.js"></script>
+   
 </body>
 </html>

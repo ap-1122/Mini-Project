@@ -1,0 +1,38 @@
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+
+}
+
+.box{
+    margin: auto;
+    background-color: rgb(79, 194, 240);
+    width:40rem;
+    height:30rem;
+
+}
+input{
+    margin: 10px;
+}
+
+p{
+      color: rgb(231, 245, 149);
+       background-color: rgb(247, 4, 4);
+}
+ .center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;       /* No full-page height */
+  margin-top: 20px;   /* Optional spacing */
+}
+
+
+
+#signup {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+ 
