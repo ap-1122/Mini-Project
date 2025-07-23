@@ -16,7 +16,7 @@ let formvalid=()=>{
     let errorstate=document.querySelector("#errorstate")
     let errorpw=document.querySelector("#errorpass")
     let cfpwpara=document.querySelector("#errorcfpw")
-       let notmatch=document.querySelector("#notmatch")
+        
 
 
     if(Name==""){
@@ -36,14 +36,14 @@ let formvalid=()=>{
         erroraddress.innerHTML="Please enter address No"
         return false;
    }
-//    else if(Pincode.length!=5){
-//         errorpin.innerHTML="Please enter your correct pincode No"
-//         return false;
-//    }
-//    else if(Phone.length!=10){
-//         errorphone.innerHTML="Please enter your Phone No"
-//         return false;
-//    }
+   else if(Pincode.length!=6  || isNaN(Pincode) ){
+        errorpin.innerHTML="Please enter your correct pincode No"
+        return false;
+   }
+   else if(State==""){
+        errorstate.innerHTML="Please enter your State Name"
+        return false;
+   }
 
        else if(!(PW.match(/[!@#$%^&*]/) &&
               PW.match(/[1234567890]/)   &&
@@ -61,8 +61,11 @@ let formvalid=()=>{
         document.querySelector("#cfpw").focus();
          return false;
    }
+
+   else{
+   alert("form submitted")
    
-  
+  }
 
 
 }

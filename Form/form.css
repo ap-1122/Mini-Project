@@ -2,21 +2,43 @@
     margin: 1px;
     padding: 1px;
     box-sizing: border-box;
+  
+
+}
+body{
+   background-image: url(./background-5050213_1280.webp);
 
 }
 
 .box{
+    
     margin: auto;
-    background-color: rgb(79, 194, 240);
+    margin-top: 20px;
+    
     width:40rem;
-    height:30rem;
+    height:39rem;
+    border: 4px solid rgb(244, 244, 241);
+    border-radius: 5px;
+     background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* adds blur to background */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+
+
+
 
 }
 input{
+  padding: 3px;
+
     margin: 10px;
+    border:2px solid black;
+    background-color: aliceblue;
 }
 
-p{
+p{      
+      margin-top: 3px;;
       color: rgb(231, 245, 149);
        background-color: rgb(247, 4, 4);
 }
