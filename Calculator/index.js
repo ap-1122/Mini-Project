@@ -1,9 +1,26 @@
  let store = "";
 
     let cal = (value) => {
-      let display = document.querySelector("#screen");
-      store = store + value;
-      display.innerHTML = store;
+     let display = document.querySelector("#screen");
+
+  const operators = ['+', '-', '*', '/', '%'];
+
+  // Check if last character is operator and new value is also operator
+  if (
+    operators.includes(store.slice(-1)) && 
+    operators.includes(value)
+  ) {
+
+    
+    // Replace last operator with new one
+    store = store.slice(0, -1) + value;
+  } else {
+    
+    // Append normally
+    store += value;
+  }
+
+  display.innerHTML = store;
     }
 
     let res = () => {

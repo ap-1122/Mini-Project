@@ -1,48 +1,53 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-   <table  border ="2" cellpadding ="20px" cellspacin="20px" class="table" >
-        <tr><td colspan="4" id="screen">  </td></tr>
-        <tr>
-            <td onclick="cal(1)">1</td>
-            <td onclick="cal(2)">2</td>
-            <td onclick="cal(3)">3</td>
-            <td onclick="cal('+')">+</td>
-        </tr>
-         <tr>
-            <td onclick="cal(4)">4</td>
-            <td onclick="cal(5)">5</td>
-            <td onclick="cal(6)">6</td>
-            <td onclick="cal('-')">-</td>
-        </tr>
-         <tr>
-            <td onclick="cal(7)">7</td>
-            <td onclick="cal(8)">8</td>
-            <td onclick="cal(9)">9</td>
-            <td onclick="cal('/')">/</td>
-        </tr>
-        <tr>
-            <td onclick="cal(0)">0</td>
-            <td onclick="cal('.')">.</td>
-            <td onclick="cal('%')">%</td>
-            <td onclick="sqrt()">√</td>
-        </tr>
-        
-         <tr>
-            <td onclick="clearScreen()"  id="ac-btn">Ac</td>
-            <td onclick="deleteLast()" >Del</td>
-            <td onclick="res()" >=</td>
-            <td onclick="cal('*')">*</td>
-        </tr>
+  <table border="2" cellpadding="20px" cellspacing="20px" class="table">
+    <tr>
+      <td colspan="4" id="screen"></td>
+    </tr>
 
-     </table>
+    <tr>
+      <td onclick="cal(1)">1</td>
+      <td onclick="cal(2)">2</td>
+      <td onclick="cal(3)">3</td>
+      <td onclick="cal('+')" class="operator">+</td>
+    </tr>
 
-     <script src="index.js"></script>
+    <tr>
+      <td onclick="cal(4)">4</td>
+      <td onclick="cal(5)">5</td>
+      <td onclick="cal(6)">6</td>
+      <td onclick="cal('-')" class="operator">-</td>
+    </tr>
+
+    <tr>
+      <td onclick="cal(7)">7</td>
+      <td onclick="cal(8)">8</td>
+      <td onclick="cal(9)">9</td>
+      <td onclick="cal('/')" class="operator">/</td>
+    </tr>
+
+    <tr>
+      <td onclick="cal(0)">0</td>
+      <td onclick="cal('.')">.</td>
+      <td onclick="cal('%')" class="operator">%</td>
+      <td onclick="sqrt()">√</td>
+    </tr>
+
+    <tr>
+      <td onclick="clearScreen()" id="ac-btn">AC</td>
+      <td onclick="deleteLast()">Del</td>
+      <td onclick="res()" class="equal-btn">=</td>
+      <td onclick="cal('*')" class="operator">*</td>
+    </tr>
+  </table>
+
+  <script src="index.js"></script>
 </body>
 </html>
